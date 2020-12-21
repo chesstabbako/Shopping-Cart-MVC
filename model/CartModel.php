@@ -170,7 +170,7 @@ private $content;
         $result->bindValue(":id_item", $id_item);
         $result->execute();
 
-    }// item_rate($id, $rate) finishes
+    }// rating($id_item) finishes
 
 
 }

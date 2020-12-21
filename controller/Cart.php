@@ -252,18 +252,6 @@ class CartController{
     
      }//rate_item finishes
 
-    /*public function btn_plus(){
-
-       require_once "controller/control/control_plus.php";
-
-    }// btn_plus finishes
-
-    public function btn_minus(){
-
-        require_once "controller/control/control_minus.php";
- 
-     }//btn_plus finishes*/
-
     public function btn_change(){
 
         session_start();

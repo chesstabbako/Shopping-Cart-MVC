@@ -1,0 +1,23 @@
+@media screen and (max-width: 850px){
+
+
+    main .item{
+      
+        /*border: 1px solid black;*/
+        width: 34%;
+        
+  }
+
+}
+
+@media screen and (max-width: 650px){
+
+
+    main .item{
+      
+        /*border: 1px solid black;*/
+        width: 45%;
+        
+  }
+
+}

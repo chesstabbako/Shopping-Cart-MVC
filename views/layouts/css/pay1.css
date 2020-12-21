@@ -1,0 +1,200 @@
+*{
+
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+body{
+
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+main{
+
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+background: rgba(0, 0, 0, .2);
+
+}
+
+main section{
+
+/*border: 1px solid black;*/
+width: 50%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+padding: 10px;
+border-radius: 5px;
+background: rgb(37, 29, 48);
+}
+
+section .div{
+
+border:none;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, .4);
+width: 100%;
+padding: 5px;
+
+}
+
+.verify{
+
+border:none;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+color: white;
+font-weight: bold;
+font-style: italic;
+margin-bottom: 20px;
+
+}
+
+.purchase{
+
+    /*border: 1px solid black;*/
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1px;
+    border-radius: 5px;
+
+}
+
+.purchase p, .purchase div{
+
+/*border: 1px solid black;*/
+width: 100%;
+text-align: justify;
+
+}
+
+.purchase p{
+
+color: white;
+
+}
+
+.purchase p span{
+
+margin-right: 5px;
+font-size: 1.1em;
+font-weight: bold;
+
+}
+
+.purchase .a_purchase{
+
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 15px;
+
+}
+
+.a_purchase a{
+
+    border: none;
+    border-radius: 4px;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+
+}
+
+.come{
+   
+    background: dimgray;
+
+}
+
+div .button-form{
+
+
+    border: none;
+    border-radius: 4px;
+    width: 30%;
+    padding: 10px;
+    background: rgb(60, 133, 60, .85);
+    cursor: pointer;
+
+}
+
+.pay{
+    
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    background: rgb(60, 133, 60, .85);
+    cursor: pointer;
+
+}
+
+.no-enought{
+    
+    border:none;
+    width: 90%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: white;
+
+}
+
+.no-enought p{
+
+color: black;
+width: 100%;
+
+}
+
+.no-enought a{
+
+background: dimgray;
+width: 80%;
+text-align: center;
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+margin-top: 15px;
+padding: 10px;
+margin-bottom: 15px;
+border-radius: 3px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

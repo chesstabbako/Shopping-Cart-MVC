@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Process</title>
-    <link rel="stylesheet" href="views/layouts/css/pay1.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/pay.css" type="text/css">
 </head>
 <body>
 

@@ -238,8 +238,6 @@ main .item-img img{
       
 }
 
-
-
 main .item-descripcion{
       
       width: 100%;
@@ -258,7 +256,7 @@ main .item-descripcion{
       text-align: center;
       color: white;
       font-weight: bold;
-      font-size: 20px ;
+      font-size: 20px;
       
 }
 
@@ -281,7 +279,7 @@ font-size: 0.9em;
       
       font-size: 25px;
       color:purple;
-      margin-right: 6px;
+      margin-right: 1px;
       
 }
 

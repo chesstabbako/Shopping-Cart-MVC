@@ -14,14 +14,14 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
       
     <meta charset="UTF-8">
     <meta name="viewport" content= "width= device-width, initial-scale=1">
     <title><?php echo $data["title"];?></title>
-    <link rel="stylesheet" href="views/layouts/css/shopstyle.css" type="text/css">
-    <link rel="stylesheet" href="views/layouts/css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/shopstyle.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
     <link href="https://file.myfontastic.com/rDF2zywsqY9TW24h5V4rSX/icons.css" rel="stylesheet">
     
 </head>
@@ -36,7 +36,8 @@
                   
                   <div class="welcome-img">
                         
-                        <img src="views/layouts/images/shopping_cart2.svg">
+                        <img src="assets/images/shopping_cart2.svg">
+
                   </div>
                   
                   <p class="p-w">
@@ -115,7 +116,7 @@
                   <?php }else{ ?>
                   
                         <a href="index.php?c=cart&a=logout" title="Log-out">
-                        <i class="icon-out">O</i>
+                        <i class="icon-out"></i>
                         <!--icon-sign is a class that is connected with
                          fontastic. So, while testing, if you don't see the 
                          icon, just write a letter between the

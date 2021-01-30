@@ -101,11 +101,11 @@ private $content;
 
            );
 
-           header('location: index.php'); 
+           header('location:index.php'); 
 
         }else{
 
-            header('location: index.php?c=cart&a=login');
+            header('location:index.php?c=cart&a=login');
 
         }
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
-    <link href="views/layouts/css/form3.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/form.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 

@@ -12,8 +12,8 @@
                               
                              <span class="icon-danger"></span> Your order is empty: 
                              go to home and and beging adding to the cart.
-                             <!--icon-danger is a class that is connected width
-                             fontastic. So, while testing, if you dont see the icon, just
+                             <!--icon-danger is a class that is connected with
+                             fontastic. So, while testing, if you don't see the icon, just
                              write a letter between the <span></span>, for example: <span>x</span>-->
                               
                         </p>
@@ -29,10 +29,10 @@
                               
                              <span class="icon-success"></span> Please verify: you can edit
                               the quantity of the items or delete them  if this order doesn't
-                               matches the one you have chosen.
+                               matche the one you have chosen.
                                <!--icon-success is a class that is connected 
-                               widthfontastic. So, while testing, if you dont
-                              see the icon, justwrite a letter between the
+                               with fontastic. So, while testing, if you don't
+                              see the icon, just write a letter between the
                                <span></span>, for example: <span>ok</span>-->
                               
                         </p>
@@ -190,6 +190,8 @@
                                     id="pay" 
                                     >
                                     
+                              
+                              
                               </form>
                               
                         </div>
@@ -204,7 +206,7 @@
                   
       </section>
             
-            <!--section  container-cart finishes-->
+            <!--section container-cart finishes-->
             
       </main>
       

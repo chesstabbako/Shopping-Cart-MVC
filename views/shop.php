@@ -38,7 +38,7 @@
                         <div class="item-img">
                               
                               <img 
-                              src="views/layouts/images/<?php echo $data["items"][0][$i]['image'];?>"
+                              src="assets/images/<?php echo $data["items"][0][$i]['image'];?>"
                               >
                               
                         </div>
@@ -87,11 +87,6 @@
                         <?php } ?>
                               
                               <p class="item-name">
-                                    <i class="icon-check"></i>
-                                    <!--icon-check is a class that is connected 
-                                    widt fontastic. So, while testing, if you 
-                                    dont see the icon, just write a letter
-                                     between the <i></i>, for example: <i>ok</i>-->
                                     <?php echo $data["items"][0][$i]['name'];?>
                               </p>
 

@@ -3,8 +3,8 @@
 class CartController{
 
     public function index(){
-
-    session_start();
+    
+        session_start();
           
           $data["title"]= "Shopping Cart";
           $items= new CartModel();

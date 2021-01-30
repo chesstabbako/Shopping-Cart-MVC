@@ -61,7 +61,7 @@
             <nav class="main-links">
                   
                   <a href="index.php?" title="home">
-                        <i class="icon-home">H</i>
+                        <i class="icon-home"></i>
                         <!--icon-home is a class that is connected with
                          fontastic. So, while testing, if you don't see the icon, just
                          write a letter between the <i></i>, for example: <i>H</i>-->
@@ -72,7 +72,7 @@
                   <a href="index.php?c=cart&a=inbox"
                    title="Go to your Cart" 
                    class="a-cart">
-                        <i class="icon-shop">C</i>
+                        <i class="icon-shop"></i>
                         <!--icon-shop is a class that is connected with
                          fontastic. So, while testing, if you don't see the icon, just
                          write a letter between the <i></i>, for example: <i>C</i>-->
@@ -104,7 +104,7 @@
                   ?>
                   
                   <a href="index.php?c=cart&a=login" title="Log-in">
-                        <i class="icon-sign">S</i>
+                        <i class="icon-sign"></i>
                         <!--icon-sign is a class that is connected with
                          fontastic. So, while testing, if you don't see 
                          the icon, just write a letter between 

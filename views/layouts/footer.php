@@ -47,8 +47,6 @@
       <script src="controller/ajax/btn_change.js"></script>
       <script src="controller/ajax/btn_rating.js"></script>
       <script src="controller/ajax/btn_pay.js"></script>
-      <!--<script src="controller/ajax/btn_plus.js"></script>
-      <script src="controller/ajax/btn_minus.js"></script>-->
              
 </body>
 </html>

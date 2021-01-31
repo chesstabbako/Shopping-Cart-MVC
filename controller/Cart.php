@@ -34,18 +34,6 @@ class CartController{
         }
         
     }//function inbox()
-    
-    /*public function add($id){
-        
-        //mistake: the db is not necessary
-        $data["title"]= "My order";
-        $items= new CartModel();
-        $data["items"]= $items->takeId($id);
-        require_once "controller/control/control_add.php";
-        header('location: index.php');
-        //$this->index();
-           
-    }//function add*/
 
     public function add(){
 
@@ -147,9 +135,9 @@ class CartController{
     public function test(){
 
         if($_POST['name']=="" && $_POST['mail']=="" && $_POST['pass']==""){
-
+        
             header('location: index.php');
-
+        
         }else{
         
             $name= $_POST['name'];
@@ -233,7 +221,7 @@ class CartController{
             if(isset($_POST['value'])){
         
               //session_start();
-
+            
                $id_user= $_SESSION['user']['id'];
                $rate_user= $_POST['value'];
                $id_item= $_POST['id_item'];
@@ -245,7 +233,7 @@ class CartController{
                $update= new CartModel();
                $update->rating($id_item);
                header('location: index.php');
-
+ 
             }
 
         }

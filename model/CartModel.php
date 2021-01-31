@@ -29,22 +29,6 @@ private $content;
  
     }//get_items() finishes
 
-   /* public function takeId($id){ 
-        
-        $sql= "select * from `cart` where `id`='$id'";
-        $result= $this->db->prepare($sql);
-        $result->execute();
-        
-        while($row= $result->fetchAll(PDO::FETCH_ASSOC)){
-        
-           $this->content[] = $row;  
-        
-        }
-
-        return $this->content;
- 
-    }// takeId($id) finishesss*/
-
     public function user_data($name, $email, $password){
         
         $sql= "INSERT INTO `users` 

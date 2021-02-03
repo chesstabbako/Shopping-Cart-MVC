@@ -31,8 +31,8 @@ $(document).ready(function(){
         }).done(function(response){
 
             response=JSON.parse(response);
-            total_item.html("$" + response.total_item);
-            total_order.html("$" + response.total_order);
+            total_item.html("$" + response.total_item.toFixed(2));
+            total_order.html("$" + response.total_order.toFixed(2));
             $("number_id"+id).val(response.new_quantity);
                 
         });//ajax btn_change finishes...

@@ -40,7 +40,7 @@ private $content;
         $result->bindValue(":u_email", $email);
         $result->bindValue(":u_password", $password);
         $result->execute();
-
+        
     }// user_data($name, $email, $password) finishesss
 
     public function check_session($email, $password){

@@ -75,7 +75,8 @@ class CartController{
       
                       unset($_SESSION['shoppingCart'][$key]);
                       $newCart=count($_SESSION['shoppingCart']);
-      
+                      $msg ="Item deleted correctly";
+
                     }
       
                 }
@@ -89,8 +90,9 @@ class CartController{
                 $response= new stdClass();
                  
                 $response->total_order=$total_order;
+                $response->msg=$msg;
                 $response->newCart=$newCart;
-            
+
                 $json= json_encode($response); 
 
                 echo $json;

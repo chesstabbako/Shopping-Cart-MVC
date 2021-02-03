@@ -14,6 +14,18 @@
                         
             </div>
 
+      <?php }else{ ?>
+
+            <div class="message cart-success" id="msg-success">
+
+                  <p>
+                    
+                      "Add products by clicking to add to cart"
+                            
+                  </p>
+                        
+            </div>
+
       <?php } ?>
             
             <section class="container-items">

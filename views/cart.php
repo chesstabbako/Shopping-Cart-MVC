@@ -7,15 +7,15 @@
 
             <?php if(empty($_SESSION['shoppingCart'])){ ?>
 
-                  <div class="message cart-danger">
+                  <div class="message cart-danger" id="noItems-cart">
                         <p>
-                              
+                        
                              <span class="icon-danger"></span> Your order is empty: 
                              go to home and and beging adding to the cart.
                              <!--icon-danger is a class that is connected with
                              fontastic. So, while testing, if you don't see the icon, just
                              write a letter between the <span></span>, for example: <span>x</span>-->
-                              
+                           
                         </p>
                   </div>
 
@@ -23,7 +23,7 @@
 
             <?php if(!empty($_SESSION['shoppingCart'])){ ?>
                   
-                  <div class="message cart-success">
+                  <div class="message cart-success" id="cart-success">
 
                         <p>
                               
@@ -38,10 +38,18 @@
                         </p>
 
                   </div>
+
+                  <div class="message cart-success" id="cart-delete">
+
+                        <p>
+                              
+                        </p>
+
+                  </div>
                   
                   <!--div items-added begins-->
                   
-                  <div class="items-added">
+                  <div class="items-added" id="table-info">
                         
                           <!--div table begins-->
                         
@@ -161,7 +169,7 @@
                   
                   <?php if(!empty($_SESSION['shoppingCart'])){ ?>
 
-                  <div class="complete-process process_buy">
+                  <div class="complete-process process_buy" id="process_buy">
                         
                         <div class="buy">
                               

@@ -48,14 +48,14 @@ if(isset($_POST['id'])){
 
               $_SESSION['shoppingCart'][0]= $items;
 
-              $message= "<i class= 'icon-check'></i>Item added correctly";
+              $message= "Item added correctly";
             
       }else{
 
             $columns= array_column($_SESSION['shoppingCart'], 'id');
 
               if(in_array($id, $columns)){
-
+ 
                 foreach($_SESSION['shoppingCart'] as $key=>$item){
 
                  //print_r($items);
@@ -63,7 +63,7 @@ if(isset($_POST['id'])){
                     if($item['id']==$id){
 
                        $_SESSION['shoppingCart'][$key]['quantity']=$_SESSION['shoppingCart'][$key]['quantity'] + 1;
-                       
+                       $message= "Item added correctly";
                     }
 
                 }
@@ -83,6 +83,7 @@ if(isset($_POST['id'])){
               );
 
               $_SESSION['shoppingCart'][$counter]= $items;
+              $message= "Item added correctly";
 
             }
 
@@ -90,7 +91,16 @@ if(isset($_POST['id'])){
 
   }
 
-  echo count($_SESSION['shoppingCart']);
+  $response= new stdClass();
+
+  $response->shoppingCart= count($_SESSION['shoppingCart']);
+  $response->msg = $message;
+
+  $json= json_encode($response);
+
+  echo $json;
+
+  /* echo count($_SESSION['shoppingCart']); */
 
 }else{
 

@@ -29,7 +29,7 @@
                               
                              <span class="icon-success"></span> Please verify: you can edit
                               the quantity of the items or delete them  if this order doesn't
-                               matche the one you have chosen.
+                               match the one you have chosen.
                                <!--icon-success is a class that is connected 
                                with fontastic. So, while testing, if you don't
                               see the icon, just write a letter between the

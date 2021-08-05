@@ -8,5 +8,7 @@ c.- The user can add items to the cart. If the purchase does not match, there is
 d.- Choosing a shipping option is demanded. 
 e.- After clicking on 'complete' to pay, the system will display the shopping information (including the money available after the shop).
 
+steps: 
 
-
+1.- git clone (url) on your gitbash.
+2.-This folder contains the database document (.sql) that must be imported using PhpMyAdmin.

@@ -5,7 +5,7 @@ class CartModel{
 private $db;
 private $content;
 
-     public function __construct(){
+    public function __construct(){
 
        require_once "config/connection.php";
        $this->db= Connection::Connect();
@@ -60,8 +60,8 @@ private $content;
             //die();
         
             if(password_verify($password, $row[0]['password'])){
-             
-                $counter= $counter + 1;
+            
+               $counter= $counter + 1;
 
             }
 
@@ -155,6 +155,5 @@ private $content;
         $result->execute();
 
     }// rating($id_item) finishes
-
 
 }

@@ -72,18 +72,18 @@ class CartController{
                 foreach($_SESSION['shoppingCart'] as $key=>$item){
       
                     if($item['id']==$id){
-      
+                    
                       unset($_SESSION['shoppingCart'][$key]);
                       $newCart=count($_SESSION['shoppingCart']);
                       $msg ="Item deleted correctly";
-
+                    
                     }
       
                 }
 
                 foreach($_SESSION['shoppingCart'] as $key=>$item){
 
-                    $total_order+= $item['price']*$item['quantity'];
+                  $total_order+= $item['price']*$item['quantity'];
 
                 } 
             

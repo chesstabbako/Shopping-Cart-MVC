@@ -24,9 +24,9 @@
                                                 
        foreach($_SESSION['shoppingCart'] as $key=>$item){
       
-           $total_order+= $item['price']*$item['quantity'];
+        $total_order+= $item['price']*$item['quantity'];
 
-       } 
+       }
 
        //echo $total_order ."<br>";
        //echo $_SESSION['user']['name'] ."<br>";
@@ -36,7 +36,7 @@
 
        if($_GET['ship']==0){
 
-         $ship_option= "PickUp";
+        $ship_option= "PickUp";
 
        }else if($_GET['ship']==5){
 

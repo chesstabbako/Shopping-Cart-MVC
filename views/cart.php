@@ -11,7 +11,7 @@
                         <p>
                         
                              <span class="icon-danger"></span> Your order is empty: 
-                             go to home and and beging adding to the cart.
+                             go to home and beging adding to the cart.
                              <!--icon-danger is a class that is connected with
                              fontastic. So, while testing, if you don't see the icon, just
                              write a letter between the <span></span>, for example: <span>x</span>-->

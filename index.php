@@ -18,7 +18,7 @@
                
                if(isset($_GET['id'])){
                 
-                createAction($controller, $_GET['a'], $_GET['id'] );
+                createAction($controller, $_GET['a'], $_GET['id']);
 
                }else{
 

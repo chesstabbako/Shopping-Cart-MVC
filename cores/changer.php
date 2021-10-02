@@ -5,11 +5,11 @@ function goController($controller){
      $newController= ucwords($controller)."Controller";
      $fileController= "controller/".ucwords($controller).".php";
 
-       if(is_file($fileController)){
-
-          $fileController="controller/".MAIN_CONTROLLER.".php";
-
-       }//if(is_file($fileController)) finishes...
+      if(is_file($fileController)){
+      
+        $fileController="controller/".MAIN_CONTROLLER.".php";
+      
+      }//if(is_file($fileController)) finishes...
 
     require_once $fileController;
 
@@ -42,6 +42,3 @@ function createAction($controller, $action, $id=null){
     }
 
 }
-
-
-?>

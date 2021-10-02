@@ -62,8 +62,8 @@ if(isset($_POST['id'])){
 
                     if($item['id']==$id){
 
-                       $_SESSION['shoppingCart'][$key]['quantity']=$_SESSION['shoppingCart'][$key]['quantity'] + 1;
-                       $message= "Item added correctly";
+                      $_SESSION['shoppingCart'][$key]['quantity']=$_SESSION['shoppingCart'][$key]['quantity'] + 1;
+                      $message= "Item added correctly";
                     }
 
                 }

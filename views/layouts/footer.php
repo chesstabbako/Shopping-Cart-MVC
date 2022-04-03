@@ -26,13 +26,6 @@
                         <p>All rights reserved!</p>
 
                   </div>
-
-                  <div class="footer-img">
-
-                        <img class='img' src="assets/images/tabaco111.png">
-
-                  </div>
-
             </div>
 
             <!--footer-info finishes-->

@@ -14,64 +14,59 @@ body {
 header {
       overflow: hidden;
       width: 100%;
-      height: 100vh;
-      display: relative;
+      min-width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
       background: rgba(49, 35, 54, 0.35);
       margin-bottom: .1px;
- /*      min-width: 650px; */
 }
 
 .header {
-      /* border: 1px solid blue; */
       padding: .3rem;
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
       align-items: center;
-      margin: auto;
       width: 100%;
-      height: 100%;
       justify-content: space-around;
 }
 
 .welcome {
-      /* border: 1px solid red; */
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       width: 90%;
-      height: 30rem;
       overflow: hidden;
       padding: 1rem;
 }
 
 .welcome-img {
- /*      border: 1px solid blue; */
-      border-radius: .5rem;
-      width: 55rem;
-      height: 25rem;
+      border: 1px solid rgb(198, 198, 216);
+      max-width: 400px;
+      max-height: 400px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
       margin-bottom: .9rem;
-}
-
-.welcome-img .img {
- /*      border: 1px solid yellow; */
-      border-radius: 1.5rem;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+      background-image: url('../images/profile1.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
 }
 
 .welcome p {
       font-size: 1.1rem;
       color: white;
       font-weight: bold;
+      width: 100%;
+      text-align: center;
 }
 
 .icon-coffee {
-      font-size: 1.2rem;
-      margin-left: .5rem;
-      color: black;
+      font-size: 2rem;
+      color: blue;
 }
 
 .ts {
@@ -80,11 +75,7 @@ header {
 }
 
 .info-linkUsers {
-      /* border: 1px solid purple; */
       width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -163,7 +154,7 @@ main {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-/*       min-width: 650px; */
+      min-width: 300px;
 }
 
 main .container-items {
@@ -313,11 +304,14 @@ div .for-rate {
 /*------------ footer begins-----*/
 
 footer {
-/*       min-width: 650px; */
-      position: relative;
+      min-width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       width: 100%;
-      height: 25rem;
-      background: rgb(71, 57, 71);
+      padding: 6rem 0rem;
+      background: #cccc;
 }
 
 footer .svg {
@@ -328,47 +322,40 @@ footer .svg {
 }
 
 .footer-info {
-      /* border: 1px solid black; */
-      position: absolute;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      bottom: 0;
-      left: 0;
       width: 100%;
-      height: 25rem;
 }
 
 .social-media, .footer-img {
-      /* border: 1px solid black; */
-      width: 40%;
+      max-width: 300px;
       overflow: hidden;
-}
-
-.footer-img {
-      text-align: center;
-      height: 100%;
 }
 
 .social-media {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
 }
 
 .social-media a {
       /* border: 1px solid black; */
-      width: 7rem;
-      height: 6rem;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       text-decoration: none;
       text-align: center;
-      font-size: 3rem;
-      padding-top: 2rem;
+      font-size: 35px;
       border-radius: 50%;
       background: #f2f2f2;
       color: thistle;
+      margin-bottom: .5rem;
 }
 
 .social-media a i {
@@ -381,7 +368,8 @@ footer .svg {
       text-align: center;
       font-size: 1.2rem;
       font-weight: bold;
-      color: white;
+      color: rgb(216, 200, 216);
+      text-shadow: 1px 1px 2px black;
 }
 
 .footer-img {

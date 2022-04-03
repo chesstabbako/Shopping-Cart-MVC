@@ -36,128 +36,117 @@
                   <div class="welcome">
 
                         <div class="welcome-img">
-
-                              <img class='img' src="assets/images/chess.jpeg">
-
                         </div>
 
                         <p class="p-w">
-                              Welcome to Tabaco's Shop
-                              <i class="icon-coffee"></i>
-                              <!--icon-coffee is a class that is connected with
-                         fontastic. So, while testing, if you don't see the icon, just
-                         write a letter between the <i></i>, for example: <i>C</i>-->
+                            Js and PHP Developer Ricardo Tovar
                         </p>
 
                   </div>
                   <!--div welcome finishes-->
 
+                  
             </div>
-
             <!--container header-->
-
             <!--div info-link-user begins-->
-
             <div class="info-linkUsers">
 
-                  <nav class="main-links">
+<nav class="main-links">
 
-                        <a href="index.php?" title="home">
-                              <i class="icon-home"></i>
-                              <!--icon-home is a class that is connected with
-                         fontastic. So, while testing, if you don't see the icon, just
-                         write a letter between the <i></i>, for example: <i>H</i>-->
-                        </a>
+      <a href="index.php?" title="home">
+            <i class="icon-home"></i>
+            <!--icon-home is a class that is connected with
+ fontastic. So, while testing, if you don't see the icon, just
+ write a letter between the <i></i>, for example: <i>H</i>-->
+      </a>
 
-                        <?php if (isset($_SESSION['user'])) { ?>
+      <?php if (isset($_SESSION['user'])) { ?>
 
-                              <a href="index.php?c=cart&a=inbox" title="Go to your Cart" class="a-cart">
-                                    <i class="icon-shop"></i>
-                                    <!--icon-shop is a class that is connected with
-                         fontastic. So, while testing, if you don't see the icon, just
-                         write a letter between the <i></i>, for example: <i>C</i>-->
+            <a href="index.php?c=cart&a=inbox" title="Go to your Cart" class="a-cart">
+                  <i class="icon-shop"></i>
+                  <!--icon-shop is a class that is connected with
+ fontastic. So, while testing, if you don't see the icon, just
+ write a letter between the <i></i>, for example: <i>C</i>-->
 
-                                    <span class="number number_cart">
-
-                                          <?php
-
-                                          if (!empty($_SESSION['shoppingCart'])) {
-
-                                                echo count(($_SESSION['shoppingCart']));
-                                          } else {
-
-                                                echo 0;
-                                          }
-
-                                          ?>
-                                    </span>
-                              </a>
-
-                        <?php } ?>
+                  <span class="number number_cart">
 
                         <?php
 
-                        if (!isset($_SESSION['user'])) {
+                        if (!empty($_SESSION['shoppingCart'])) {
+
+                              echo count(($_SESSION['shoppingCart']));
+                        } else {
+
+                              echo 0;
+                        }
 
                         ?>
+                  </span>
+            </a>
 
-                              <a href="index.php?c=cart&a=login" title="Log-in">
-                                    <i class="icon-sign"></i>
-                                    <!--icon-sign is a class that is connected with
-                         fontastic. So, while testing, if you don't see 
-                         the icon, just write a letter between 
-                         the <i></i>, for example: <i>R</i>-->
+      <?php } ?>
 
-                              </a>
+      <?php
 
-                        <?php } else { ?>
+      if (!isset($_SESSION['user'])) {
 
-                              <a href="index.php?c=cart&a=logout" title="Log-out">
-                                    <i class="icon-out"></i>
-                                    <!--icon-sign is a class that is connected with
-                         fontastic. So, while testing, if you don't see the 
-                         icon, just write a letter between the
-                          <i></i>, for example: <i>O</i>-->
+      ?>
 
-                              </a>
+            <a href="index.php?c=cart&a=login" title="Log-in">
+                  <i class="icon-sign"></i>
+                  <!--icon-sign is a class that is connected with
+ fontastic. So, while testing, if you don't see 
+ the icon, just write a letter between 
+ the <i></i>, for example: <i>R</i>-->
 
-                        <?php } ?>
+            </a>
 
-                  </nav>
+      <?php } else { ?>
 
-                  <!--nav main-links finishes-->
+            <a href="index.php?c=cart&a=logout" title="Log-out">
+                  <i class="icon-out"></i>
+                  <!--icon-sign is a class that is connected with
+ fontastic. So, while testing, if you don't see the 
+ icon, just write a letter between the
+  <i></i>, for example: <i>O</i>-->
 
-                  <?php if (isset($_SESSION['user'])) { ?>
+            </a>
 
-                        <?php
-                        //print_r($_SESSION['user']['name']);
-                        //die();
-                        ?>
+      <?php } ?>
 
-                        <div class="user-info1">
+</nav>
 
-                              <p><span>Wellcome</span>
+<!--nav main-links finishes-->
 
-                                    <?php echo ucwords($_SESSION['user']['name']) ?>
+<?php if (isset($_SESSION['user'])) { ?>
 
-                              </p>
+      <?php
+      //print_r($_SESSION['user']['name']);
+      //die();
+      ?>
 
-                              <p><span>Wallet's current balance:</span>
+      <div class="user-info1">
 
-                                    <?php echo "$" . $_SESSION['user']['wallet'] ?>
+            <p><span>Wellcome</span>
 
-                              </p>
+                  <?php echo ucwords($_SESSION['user']['name']) ?>
 
-                        </div>
+            </p>
 
-                        <!--div user-info finishes-->
+            <p><span>Wallet's current balance:</span>
 
-                  <?php } ?>
+                  <?php echo "$" . $_SESSION['user']['wallet'] ?>
 
-            </div>
+            </p>
 
-            <!--div info-link-user finishes-->
+      </div>
 
+      <!--div user-info finishes-->
+
+<?php } ?>
+
+</div>
+<!--div info-link-user finishes-->
       </header>
 
       <!--header finishes-->

@@ -1,8 +1,8 @@
 $(document).ready(function () {
   //$("#msg-success").hide();
   $(".addCart").click(function (e) {
-    e.stopPropagation();
     e.preventDefault();
+    e.stopPropagation();
 
     var id = $(this).data("id");
     var name = $(this).data("name");
